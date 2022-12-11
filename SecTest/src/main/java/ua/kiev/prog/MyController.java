@@ -6,13 +6,12 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.User;
-import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 
 import java.util.Collection;
 import java.util.List;
 
-@Controller
+@RestController
 public class MyController {
     private final UserService userService;
     private final PasswordEncoder passwordEncoder;
